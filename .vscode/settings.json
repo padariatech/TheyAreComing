@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "TheyAreComing.sln"
+    "dotnet.defaultSolution": "TAC 2.7.1.sln"
 }

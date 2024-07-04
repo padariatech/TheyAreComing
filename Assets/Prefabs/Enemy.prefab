@@ -95,33 +95,19 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ac77fdebc2e81c4ebaa6c20c114d942, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7724238894352715680}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ac77fdebc2e81c4ebaa6c20c114d942, type: 3}
-      insertIndex: -1
       addedObject: {fileID: -176566153304168892}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ac77fdebc2e81c4ebaa6c20c114d942, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4679922026870651082}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ac77fdebc2e81c4ebaa6c20c114d942, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2187590132928883620}
   m_SourcePrefab: {fileID: 100100000, guid: 1ac77fdebc2e81c4ebaa6c20c114d942, type: 3}
 --- !u!1 &1807810848782331213 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ac77fdebc2e81c4ebaa6c20c114d942, type: 3}
   m_PrefabInstance: {fileID: 1573950561811271708}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7724238894352715680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807810848782331213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 265264f93dacd894a8655e9717883501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 60
-  damage: 1
 --- !u!54 &-176566153304168892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -170,3 +156,16 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 6
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2187590132928883620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807810848782331213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052ccf7f99c65f8458fb8e8de14381ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4330373548012853515
+--- !u!1 &3159366875251015117
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,13 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5825095782622189532}
-  - component: {fileID: 1237416606908639606}
-  - component: {fileID: 7704099773631804379}
-  - component: {fileID: 7016332013439774542}
-  - component: {fileID: 9131944718029334577}
-  - component: {fileID: 1964860246594008258}
-  - component: {fileID: 4675852399924034550}
+  - component: {fileID: 5149216597815735162}
+  - component: {fileID: 2445527397303010643}
+  - component: {fileID: 1634146902183610303}
+  - component: {fileID: -5090699590042343417}
   m_Layer: 0
   m_Name: EnemyCargo
   m_TagString: Untagged
@@ -22,37 +19,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5825095782622189532
+--- !u!4 &5149216597815735162
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330373548012853515}
+  m_GameObject: {fileID: 3159366875251015117}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.5, y: 0.1, z: 99.3}
-  m_LocalScale: {x: 0.77903, y: 0.77903, z: 0.77903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8918, y: 6.6577, z: 0.23309}
+  m_LocalScale: {x: 0.71716, y: 0.71716, z: 0.71716}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5591048902360406421}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
---- !u!33 &1237416606908639606
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2445527397303010643
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330373548012853515}
+  m_GameObject: {fileID: 3159366875251015117}
   m_Mesh: {fileID: 2171000365811251708, guid: 7eaa4c26c26276d4d8113387dccddf52, type: 3}
---- !u!23 &7704099773631804379
+--- !u!23 &1634146902183610303
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330373548012853515}
+  m_GameObject: {fileID: 3159366875251015117}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -88,114 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7016332013439774542
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330373548012853515}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 27.02099, y: 16.39595, z: 8.20892}
-  m_Center: {x: -0.034420036, y: 0.9603764, z: -0.6040817}
---- !u!54 &9131944718029334577
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330373548012853515}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 8
-  m_CollisionDetection: 1
---- !u!114 &1964860246594008258
+--- !u!114 &-5090699590042343417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330373548012853515}
+  m_GameObject: {fileID: 3159366875251015117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1feacb5ad4f47648a100aeb28bb04b6, type: 3}
+  m_Script: {fileID: 11500000, guid: c982ef7ffbab68e4ca96e1fb022b7ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 40
-  bulletPrefab: {fileID: 1833083515848963331, guid: 1524fdebc18a4904aa9ce71452fc5428, type: 3}
-  bulletSpawnPoint: {fileID: 5591048902360406421}
-  shootInterval: 1
-  lifeTime: 10
-  bulletSpeed: 70
---- !u!114 &4675852399924034550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330373548012853515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc5919378c7a7ea4e90b869d60cc1731, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxLives: 8
-  damage: 1
---- !u!1 &6374143458019122652
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5591048902360406421}
-  m_Layer: 0
-  m_Name: CargoBulletShooter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5591048902360406421
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6374143458019122652}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7069834, z: -0.7072302, w: 0}
-  m_LocalPosition: {x: -12.54, y: -13.2, z: 3.97}
-  m_LocalScale: {x: 1.2836471, y: 1.2836474, z: 1.2836474}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5825095782622189532}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  speed: 40
