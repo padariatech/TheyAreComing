@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class EnemyCargo : MonoBehaviour
 {
-    public float speed = 5f;
+	public float speed = 5f;
 
-    void Update()
-    {
-        Mover();
-    }
+	void Update()
+	{
+		Mover();
+	}
 
-    private void Mover(){
-        Vector3 Horizontal = -transform.forward * Time.deltaTime * speed;
-        transform.Translate(Horizontal);
-    }
+	private void Mover(){
+		Vector3 Horizontal = -transform.forward * Time.deltaTime * speed;
+		transform.Translate(Horizontal);
+	}
+	
+	
 
 }
