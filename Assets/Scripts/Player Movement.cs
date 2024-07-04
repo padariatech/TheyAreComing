@@ -14,10 +14,21 @@ public class PlayerMovement : MonoBehaviour
 	float horizontal;
 	float vertical;
 	[SerializeField] float speed;
-	private void Start() {
+	
+	private void Awake()
+	{
 		rb = GetComponent<Rigidbody>();
 	}
-	private void Update() {
+	private void Start()
+	{
+		GetComponent<HealthSystem>().Died += Die;
+	}
+	private void OnDestroy()
+	{
+		GetComponent<HealthSystem>().Died -= Die;
+	}
+	private void Update()
+	{
 		GetInput();
 		SpeedLimiter();
 		Rotate();
@@ -48,6 +59,11 @@ public class PlayerMovement : MonoBehaviour
 	}
 	private void Rotate()
 	{
-		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.up * maxAngleTilt * Input.GetAxisRaw("Horizontal")), angleTilt * Time.deltaTime);
+		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.back * maxAngleTilt * Input.GetAxisRaw("Horizontal")), angleTilt * Time.deltaTime);
+	}
+	
+	private void Die()
+	{
+		GameManager.instance.uiManager.ChangeScene("Defeat");
 	}
 }
