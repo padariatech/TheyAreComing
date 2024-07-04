@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(HealthSystem))]
 public class PlayerMovement : MonoBehaviour
 
 {
 	public float angleTilt = 35f;
+	public float maxAngleTilt = 35f;
 	public float smoothness = 5f;
 	Rigidbody rb;
 	float horizontal;
@@ -14,11 +16,11 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] float speed;
 	private void Start() {
 		rb = GetComponent<Rigidbody>();
-	
 	}
 	private void Update() {
 		GetInput();
 		SpeedLimiter();
+		Rotate();
 	}
 	private void GetInput()
 	{
@@ -44,10 +46,8 @@ public class PlayerMovement : MonoBehaviour
 		}
 		
 	}
-		private void Rotate(){
-		float currentAngle = transform.localEulerAngles.z;
-		float finalAngle = -Input.GetAxis("Horizontal") * angleTilt;
-		float lerpAngle = Mathf.LerpAngle(currentAngle, finalAngle, smoothness * Time.deltaTime);
-		transform.localEulerAngles = new Vector3(0f,0f,lerpAngle);
-		}
+	private void Rotate()
+	{
+		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(Vector3.up * maxAngleTilt * Input.GetAxisRaw("Horizontal")), angleTilt * Time.deltaTime);
+	}
 }
