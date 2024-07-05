@@ -7,22 +7,10 @@ public class Bullet : MonoBehaviour
 		Invoke(nameof(returnBullet), secondsToDisappear);	
 	}
 	
-	void OnTriggerEnter(Collider other)
+	void OnCollisionEnter(Collision collision)
 	{
-		if(other.TryGetComponent(out HealthSystem hSystem))
-		{
-			if((other.CompareTag("Player") && CompareTag("EnemyBullet")) || (other.CompareTag("Enemy") && CompareTag("PlayerBullet")))
-			{
-				hSystem.DecreaseHealth(1);
-			}
-			returnBullet();
-		}
+		returnBullet();
 	}
-	
-	// void OnCollisionEnter(Collision collision)
-	// {
-	// 	returnBullet();
-	// }
 
 	void returnBullet()
 	{
