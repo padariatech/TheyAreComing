@@ -5,8 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameManager
-  - EnemyCargo
-  - EnemyKamikaze
   - Enemy
   - EnemyBullet
   - PlayerBullet
